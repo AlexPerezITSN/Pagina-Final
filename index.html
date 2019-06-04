@@ -1,0 +1,249 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="index.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8">
+    </head>
+
+    <body>
+      
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right"><img src="assets/images/icono.png"></img></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="principiante.html">Principiante</a></li>
+        <li><a href="amateur.html">Amateur</a></li>
+        <li><a href="profecional.html">Profesional</a></li>
+      </ul>
+    
+
+    <ul class = "sidenav" id = "nav-mobile">
+      <li><a href="principiante.html">Principiante</a></li>
+        <li><a href="amateur.html">Amateur</a></li>
+        <li><a href="profecional.html">Profesional</a></li>
+    </ul>
+    <a href="" data-target ="nav-mobile" class="sidenav-trigger left"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+        
+      <!--Seccion 1-->
+      <div id = "index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br><br>
+            <h1 class="header center">Fotografia</h1>
+            <div class="row center">
+              <h5 class="header col s12 light">Prinicipiante, Amateur y Profesional</h5>
+            </div>
+            <div class="row center">
+              <a href="#registro" id="download_button" class="btn-large waves-effect waves-light teal lighten-1">Ver mas</a>
+            </div>
+            <br><br>
+          </div>
+        </div>
+        <div class="parallax"><img src="assets/images/img2.jpg" alt="Unsplashed background img 1"></div>
+      </div>
+      
+      <!--/Seccion 1-->
+      <!--Seccion 2-->
+      <div id="quienesSomos" class="container">
+        <div class="section">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">camera_alt</i></h2>
+              <h5 class="center">Fotografia</h5>
+              <p class="light"> </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons">star</i></h2>
+                <h5 class="center">Favoritos</h5>
+                <p class="light"> </p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text"><i class="material-icons">camera</i></h2>
+                <h5 class="center">Sobresalientes</h5>
+                <p class="light"> </p>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Seccion 2-->
+      <!--Seccion3-->
+
+      <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <div class="row center">
+              <h5 class="header col s12 light">Si quieres conocer mas acerca de Fotografia, nosotros te ayudamos.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="parallax"><img src="assets/images/img3.jpg" alt="Unsplashed background img 3"></div>
+      </div>
+      <!--/Seccion3-->
+      
+      <!--Registro-->
+
+      <section id="registro">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h2>Registra tu solicitud</h2>
+            </div>
+          </div>
+          <form class="col s12" name="fvalida" action="#" method="get">
+            <div class="row">
+            <div class="input-field col s6">
+              <input type="text" id="first_name" name = "first_name" class="validate">
+              <label for="first_name">Nombre</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="last_name" name = "last_name" class="validate">
+              <label for="last_name">Apellido</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <input type="tel" id="telefono" name = "telefono"class="validate">
+              <label for="telefono">Telefono</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <input type="email" id="email" name = "email" class="validate">
+              <label for="email">Correo electronico</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Describe las habilidades con las que cuentas tomando fotos</label>
+            </div>
+          </div>
+          <div class="row center">
+                <tr>
+      <td colspan="2" align="center"><input type="button" value="Enviar" onclick="valida_envia()"></td>
+    </tr> 
+                
+            </div>
+          </form>
+          
+
+
+        </div>
+      </section>
+
+      <!--/Registro-->
+      <!--footer-->
+
+      <footer id="footer" class="page-footer">
+        <div class="container">
+          <div class="row center-align">
+
+            <div class="col s12 l3">
+              <a href="preguntas.html">Preguntas frecuentes</a>
+            </div>
+
+            <div class="col s12 l3">
+              <a href="contactos.html">Contactanos</a>
+            </div>
+
+            <div class="col s12 l3">
+              <a href="terminos.html">Terminos y condiciones</a>
+            </div>
+
+            <div class="col s12 l3">
+              <a href="privacidad.html">Privacidad</a>
+            </div>
+          </div>
+
+          <div class="footer-copyright">
+            <div class="container left">2019-2020 Copyright Text
+              <a class="grey-text text-lighten-4 right" href="morelinks.html">More links</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!--/footer-->
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="js/init.js"></script>
+      <script src="js/materialize.js"></script>
+      <script type="text/javascript">
+        function borrar_nombre(){
+         document.getElementById("first_name").value="";
+    }
+      </script>
+      <script type="text/javascript">
+        function borrar_apellido(){
+          document.getElementById("last_name").value="";
+        }
+      </script>
+      <script type="text/javascript">
+        function borrar_telefono(){
+          document.getElementById("telefono").value="";
+        }
+      </script>
+      <script type="text/javascript">
+        function borrar_correo(){
+          document.getElementById("email").value="";
+        }
+      </script>
+      <script type="text/javascript">
+        function borrar_cajatexto(){
+          document.getElementById("icon_prefix2").value="";
+        }
+      </script>
+      <script Language="JavaScript"> 
+    <!--
+    function valida_envia()
+    {
+    if (document.fvalida.first_name.value.length==0) {
+      alert("Tiene que escribir su nombre"); 
+      document.fvalida.first_name.focus(); //ubica el cursor en la caja nombre 
+      return 0; //no avanza a commit
+    }
+
+    if (document.fvalida.last_name.value.length==0) {
+      alert("Tiene que escribir su apellido"); 
+      document.fvalida.last_name.focus(); //ubica el cursor en la caja nombre 
+      return 0; //no avanza a commit
+    }
+    var s = document.fvalida.email.value;
+    var filtro = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+    if (!filtro.test(s)) {
+      alert('Introduzca un email válido'); 
+      document.fvalida.email.focus();
+      return 0; 
+    }
+
+    var t = document.fvalida.telefono.value; 
+    var er_tlfono = /^([0-9\s\+\-])+$/; //comprueba campo teléfono de formulario //usa el método test de expresión regular
+    if(!er_tlfono.test(t)) {
+      alert('Campo TELEFONO no válido.') 
+      return 0; //no submit
+    }
+
+    //el formulario se envia usando el método submit() activándolo desde aquí 
+    alert("Muchas gracias por enviar el formulario"); 
+    document.fvalida.submit();
+
+    } 
+  </script>
+    </body>
+  </html>
